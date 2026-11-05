@@ -1,0 +1,218 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 24px;
+}
+
+.login-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 440px;
+  padding: 32px 30px;
+  border-top: 4px solid var(--navy);
+}
+
+.login-top-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.change-battalion-link {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.change-battalion-link:hover {
+  color: #b78103;
+  text-decoration: underline;
+}
+
+.current-unit-code-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #2b6cb0;
+  background: #ebf8ff;
+  border: 1px solid #bee3f8;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-header-logo {
+  height: 48px;
+  width: auto;
+  margin-bottom: 12px;
+}
+
+.login-header h1 {
+  font-size: 1.45rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.login-unit-subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.login-unit-context-pill {
+  display: inline-block;
+  margin-top: 10px;
+  background: #f1f5f9;
+  color: var(--navy);
+  border: 1px solid #cbd5e1;
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+}
+
+.login-battalion-select-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 4px;
+}
+
+.login-battalion-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 6px;
+}
+
+.login-battalion-choice-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.btn-battalion-choice {
+  background: var(--white);
+  border: 1px solid #cbd5e1;
+  padding: 8px 6px;
+  border-radius: 4px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+.btn-battalion-choice:hover {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.btn-battalion-choice.active {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-alert {
+  background: #ffebee;
+  border-left: 4px solid var(--error);
+  color: #c62828;
+  padding: 12px 14px;
+  border-radius: var(--border-radius);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.login-info-box {
+  background: #f8f9fa;
+  border-left: 4px solid var(--navy);
+  border: 1px solid #e9ecef;
+  border-left-width: 4px;
+  color: #2c3e50;
+  padding: 10px 14px;
+  border-radius: var(--border-radius);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin-top: 6px;
+}
+
+.login-forgot-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -6px;
+}
+
+.forgot-password-link {
+  color: #1976d2;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+  color: var(--navy);
+}
+
+.login-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-btn-submit {
+  width: 100%;
+  padding: 13px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.login-footer-links {
+  text-align: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eeeeee;
+}
+
+.login-back-link {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.login-back-link:hover {
+  color: var(--gold-dark);
+  text-decoration: underline;
+}

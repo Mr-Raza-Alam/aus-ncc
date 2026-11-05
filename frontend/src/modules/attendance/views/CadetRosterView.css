@@ -1,0 +1,318 @@
+.cadet-roster-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.roster-header {
+  border-top: 4px solid var(--navy);
+}
+
+.roster-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.roster-active-unit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #f8fafc;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  text-align: right;
+}
+
+.roster-unit-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.roster-unit-val {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-top: 2px;
+}
+
+.roster-unit-switch-btns {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.btn-unit-chip {
+  background: var(--white);
+  border: 1px solid #cbd5e1;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-unit-chip:hover {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.btn-unit-chip.active {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
+.roster-header h1 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.roster-subtext {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+/* ── Central Hub Sync Banner ─────────────────────────────── */
+.roster-sync-banner {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid var(--navy);
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sync-banner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.batch-status-indicators {
+  display: inline-flex;
+  gap: 8px;
+  margin-left: 8px;
+  flex-wrap: wrap;
+}
+
+.batch-indicator-pill {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.pill-loaded {
+  background: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #c8e6c9;
+}
+
+.pill-empty {
+  background: #fff3e0;
+  color: #e65100;
+  border: 1px solid #ffe0b2;
+}
+
+.pill-total {
+  background: rgba(26, 35, 126, 0.08);
+  color: var(--navy);
+  border: 1px solid rgba(26, 35, 126, 0.2);
+}
+
+.sync-hint {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.btn-goto-central {
+  font-size: 0.86rem;
+  padding: 8px 16px;
+}
+
+/* ── 3 Distinct Batch Slots ─────────────────────────────── */
+.batch-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.batch-slot-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slot-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.slot-hint {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.slot-file-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.slot-input {
+  font-size: 0.82rem;
+}
+
+.preview-results-box {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 0.82rem;
+}
+
+.preview-summary-text {
+  margin-bottom: 6px;
+}
+
+.rejected-details {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-top: 6px;
+  color: #c53030;
+}
+
+.rejected-details ul {
+  margin: 4px 0 0 16px;
+  padding: 0;
+}
+
+.slot-status-msg {
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* ── Table & Filter Bar ─────────────────────────────────── */
+.roster-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.roster-count {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.roster-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.roster-search-input {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  min-width: 220px;
+}
+
+.roster-select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background: #ffffff;
+  color: var(--navy);
+}
+
+.roster-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.roster-table th {
+  background: #f8fafc;
+  color: var(--navy);
+  padding: 12px 14px;
+  border-bottom: 2px solid #e2e8f0;
+  text-align: left;
+}
+
+.roster-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.rank-badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.wing-pill {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.pill-sd {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.pill-sw {
+  background: #fce7f3;
+  color: #be185d;
+}
+
+.btn-link {
+  color: var(--navy);
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.btn-link:hover {
+  color: var(--gold-dark);
+}
+

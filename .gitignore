@@ -1,0 +1,60 @@
+# ==========================================
+# AUS-NCC Portal — Git Ignore Configuration
+# ==========================================
+
+# Dependencies (Root, Backend, Frontend)
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# Environment & Secret Variables (CRITICAL: Never commit credentials)
+.env
+.env.*
+!.env.example
+!*/.env.example
+!**/.env.example
+*.env
+*/*.env
+**/*.env
+*.env.local
+*.env.*.local
+
+# Production Build Outputs
+dist/
+*/dist/
+**/dist/
+build/
+*/build/
+**/build/
+.vercel/
+*/.vercel/
+**/vercel/
+
+# Logs & Debuggers
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS & System Clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Temporary Directories
+tmp/
+temp/
+coverage/
+.turbo/
+.cache/

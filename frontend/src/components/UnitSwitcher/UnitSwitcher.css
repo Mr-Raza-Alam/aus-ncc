@@ -1,0 +1,30 @@
+.unit-switcher {
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.unit-switcher-btn {
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  min-width: 44px;
+  min-height: 32px;
+}
+
+.unit-switcher-btn:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.unit-switcher-btn.active {
+  background: var(--gold);
+  color: var(--navy-dark);
+}

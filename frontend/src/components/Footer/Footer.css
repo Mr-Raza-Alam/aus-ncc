@@ -1,0 +1,33 @@
+.portal-footer {
+  background: var(--navy-dark);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 24px 0 16px;
+  border-top: 2px solid var(--gold);
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+.portal-footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.footer-affiliations {
+  display: flex;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--gold-light);
+}
+
+.footer-affiliations span:nth-child(2) {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-copy {
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+

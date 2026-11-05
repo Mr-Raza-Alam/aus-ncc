@@ -1,0 +1,248 @@
+/* ══════════════════════════════════════════════════════════════════════════════
+   BATTALION GATEWAY SELECTION PAGE
+   AUS-NCC — 3 & 62 Assam Bn NCC
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.select-unit-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+}
+
+/* ── Institutional Topbar ──────────────────────────────────────────────────── */
+.select-unit-topbar {
+  background: #ffffff;
+  border-bottom: 2px solid var(--gold, #ffc107);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 12px 0;
+}
+
+.select-unit-topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.select-logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+
+.select-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-title-main {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--navy, #002147);
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+}
+
+.select-title-sub {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+/* ── Main Gateway Area ─────────────────────────────────────────────────────── */
+.select-unit-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px 64px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.select-unit-header-card {
+  text-align: center;
+  margin-bottom: 36px;
+  max-width: 620px;
+}
+
+.select-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #975a16;
+  background: rgba(255, 193, 7, 0.18);
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.select-unit-header-card h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--navy, #002147);
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+.select-subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Two-Card Grid ─────────────────────────────────────────────────────────── */
+.battalion-gateway-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.battalion-card {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  border-top: 5px solid var(--navy, #002147);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.battalion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 33, 71, 0.12);
+  border-color: var(--navy, #002147);
+  border-top-color: var(--gold, #ffc107);
+}
+
+.battalion-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.battalion-code-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #334155;
+  background: #f1f5f9;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.battalion-wing-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 12px;
+}
+
+.battalion-wing-pill.pill-mixed {
+  background: #ebf8ff;
+  color: #2b6cb0;
+  border: 1px solid #bee3f8;
+}
+
+.battalion-wing-pill.pill-sw {
+  background: #fdf2f8;
+  color: #9d174d;
+  border: 1px solid #fbcfe8;
+}
+
+.battalion-icon-wrap {
+  margin-bottom: 12px;
+}
+
+.battalion-card-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--navy, #002147);
+  color: var(--gold, #ffc107);
+  font-weight: 800;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+.battalion-card h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--navy, #002147);
+  margin-bottom: 6px;
+  letter-spacing: -0.2px;
+}
+
+.battalion-designation {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.battalion-desc {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+.battalion-card-footer {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 18px;
+}
+
+.btn-portal-enter {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+/* ── Footer Link ───────────────────────────────────────────────────────────── */
+.select-unit-footer-actions {
+  text-align: center;
+}
+
+.back-to-home-link {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--navy, #002147);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.back-to-home-link:hover {
+  color: #b78103;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .battalion-gateway-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+

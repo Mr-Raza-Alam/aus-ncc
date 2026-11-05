@@ -1,0 +1,136 @@
+.promotion-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.promotion-header {
+  border-top: 4px solid var(--navy);
+}
+
+.promotion-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.promotion-header h1 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.promotion-subtext {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.btn-promote-all {
+  background: var(--navy) !important;
+  color: var(--gold) !important;
+  font-weight: 700;
+  padding: 12px 24px;
+}
+
+/* ── Summary Count Cards ────────────────────────────────── */
+.promotion-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid var(--navy);
+}
+
+.promo-tag {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.promo-shift-label {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.promo-count {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #15803d;
+  margin-bottom: 4px;
+}
+
+.promo-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* ── Cohort Columns Grid ────────────────────────────────── */
+.cohort-columns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.cohort-col {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cohort-col h3 {
+  font-size: 0.95rem;
+  color: var(--navy);
+  margin-bottom: 12px;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 8px;
+}
+
+.cohort-list {
+  max-height: 320px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cohort-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.84rem;
+}
+
+.cohort-item strong {
+  color: #1e293b;
+}
+
+.cohort-item span {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.cohort-empty {
+  padding: 24px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
